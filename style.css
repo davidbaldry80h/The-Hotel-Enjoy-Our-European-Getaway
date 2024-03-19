@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.gallery-highlight {
+    width: 80%;
+    height: 50%;
+
+}
+
+section {
+    display: flex;
+    height: 100vh;
+}
+
+.room-gallery {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.room-descrption {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e2d2c2;
+}
+
+.room-preview {
+    display: flex;
+    width: 80%;
+border: 2px solid #e2d2c2;
+}
+
+.room-preview img{
+    height: 100px;
+    flex-grow: 1;
+    opacity: 0.6;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+
+}
+
+img.room-active {
+opacity: 1;
+}
+
+@media screen and (max-width:1196px){
+    .room-descrption{
+        background-color: #e2d2c2;
+        width: 100%;
+        height: 100%;
+        flex: 1;
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* justify-content: center; */
+        /* align-items: center; */
+    
+    }
+    .gallery-highlight {
+        width: 100%;
+        height: 150%;
+    
+    }
+    .room-gallery {
+        width: 100%;
+        height: 100%;
+        padding: 5em;
+        flex: 1;
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* justify-content: center; */
+        /* align-items: center; */
+    }
+    .gallery-highlight{
+        width: 100%;  
+    }
+    .room-preview {
+        display: flex;
+        width: 100%;
+    border: 2px solid #e2d2c2;
+    }
+    
+    .room-preview img{
+        height: 100px;
+        flex-grow: 1;
+        opacity: 0.6;
+        cursor: pointer;
+        transition: opacity 0.3s ease;
+    
+    }
+}
+@media screen and (max-width:777px){
+        section{
+        width: 100%;
+        display: grid;
+        grid-gap: .01em ;
+        grid-template-columns: repeat(auto-fit,minmax(375px,1fr));
+
+        /* flex-direction: column; */
+        }
+    
+    
+        .room-descrption{
+            background-color: #e2d2c2;
+            width: 100%;
+            height: 100%;
+            flex: 1;
+            /* display: flex; */
+            /* flex-direction: column; */
+            /* justify-content: center; */
+            /* align-items: center; */
+        
+        }
+        .gallery-highlight {
+            width: 100%;
+            height: 100%;
+        
+        }
+        .room-gallery {
+            width: 100%;
+            height: 80%;
+            /* flex: 1; */
+            object-fit: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .gallery-highlight{
+            width: 100%;  
+        }
+        .room-preview img{
+            display: flex;
+            width: 33.5%;
+            
+        }
+        
+        
+    
+}    
+    
+    
+    
